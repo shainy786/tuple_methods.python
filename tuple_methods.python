@@ -1,0 +1,14 @@
+print(dir(tuple))
+a=(2,4.6,'shn',[3,'f'])
+print(a,type(a))
+
+b=(2,4.6,2,'shn',[3,2,'f'])
+print(b.count(2))
+print(b[4].count(2))
+print(b.count(7))     #0
+
+c=(2,4.6,2,'shn',[3,2,'f'])
+# print(b.index(9))          #ValueError: tuple.index(x): x not in tuple
+print(c.index(2))
+print(c.index(2,2))
+print(c[4].index('f'))
